@@ -1,0 +1,26 @@
+<p>
+    <strong>Title:</strong>
+    <%= @article.title %>
+</p>
+
+<p>
+    <strong>Content:</strong>
+    <%= @article.content %>
+</p>
+
+<p>
+ <%= link_to 'Edit', controller: 'articles', action:
+    'edit', id: @article.id %>
+</p>
+
+<p>
+<%= link_to 'Edit', controller: 'articles', action:
+    'edit', id: article.id %>
+    </p>
+
+def index
+    @articles = Article.all
+end
+
+<%= link_to ‘Back’, articles_path %>
+<%= link_to article.title, article %>
